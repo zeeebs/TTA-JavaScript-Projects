@@ -6,6 +6,6 @@ function dictionaryFunction() {
         Memory: "256 GB",
         Color: "Black, Red, & Blue"
     };
-    delete Game.Brand
+    delete Game.Brand 
     document.getElementById("dictionary").innerHTML = Game.Brand;
 }
