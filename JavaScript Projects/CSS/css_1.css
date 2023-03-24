@@ -1,0 +1,16 @@
+input[type="text"] {
+    width: 50%;
+    padding: 10px 15px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: dashed 3px rgb(150, 0, 140);
+    border-radius: 10px;
+    background-color: #ffe5fc;
+    color: black;
+}
+
+label {
+    color:rgb(150, 0, 140);
+    font-size: 20px;
+    font-weight: bold;
+}
