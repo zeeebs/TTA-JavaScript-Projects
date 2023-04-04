@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery.3.4.0/jquery.min.js"></script>
+    <!--first script source returning an error on the browser, added fallback source which fixed it-->
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/JavaScript"></script> 
+    <!--using files via jQuery instead of having to code everything-->
+</head>
+
+<script> 
+//$=jQuery
+    $(document).ready(function() { 
+        //when the document is ready, execute the function
+        $("html").append ( 
+            //targeting html tag inside document, function tells to append the html
+            // backslash \ tells jquery were continuing onto the next line
+            "<body>\
+                <div id='container'>\
+                    <div id='inner'>\
+                        <h1>Basic jQuery</h1>\
+                        <p id='1'>Paragraph 1</p>\
+                        <p id='2'>Paragraph 2</p>\
+                        <p id='3'>Paragraph 3</p>\
+                    </div>\
+                </div>\
+            </body>"
+        );
+        $("#2").css({"color":"red"}); //makes p2 red
+        $("#3").click(function() { //makes header disapear when p3 is clicked
+            $("h1").hide();
+        });
+    });
+</script>
+
+</html>
