@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p id="XML_Example"></p>
+        <script>
+            var XML_Parser, XML_Document;
+            //creating a text string
+            var Book = "<book>" + 
+                "<title>The Butcher and the Wren</title>" + 
+                "<author>Alaina Urquhart</author>" + 
+                "<year>2022</year>" + 
+                "<book>";
+            //creating the XML DOM parser
+            XML_Parser = new DOMParser();
+
+            //creating new XML DOM object using the text string created above
+            XML_Document = XML_Parser.parseFromString(Book,"text/xml");
+
+            document.getElementById("XML_Example").innerHTML = XML_Document.getElementsByTagName("title")[0].childNodes[0].nodeValue; //displays the text
+        </script>
+    </body>
+</html>

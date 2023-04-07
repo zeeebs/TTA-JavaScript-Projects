@@ -24,6 +24,14 @@
     </style>
     
     <body>
+        <!--fade challenge-->
+        <script>
+            document.body.classList.add('fade-out');
+            window.addEventListener('DOMContentLoaded', () => {
+                    document.body.classList.remove('fade-out');
+                });
+        </script>
+        <!--/fade challenge-->
         <div id="menuBG">
             <h1 style="margin:10 0px 0 20px;">Sweet, Sweet, Pizza</h1>
             <input id="btnOrder" type="button" onclick="getReceipt()"

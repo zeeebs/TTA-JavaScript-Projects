@@ -1,4 +1,14 @@
 body {
+    opacity: 1;
+    transition: 1s opacity;
+}
+body.fade-out {
+    opacity: 0;
+    transition: none;
+}
+/* added fade in to page for fade challenge */
+
+body {
     /*assign a background to the body*/
     background: linear-gradient(to top, #b9dcf7 0%, #f8ccfd 100%);
 }

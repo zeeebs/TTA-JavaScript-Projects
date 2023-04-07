@@ -1,0 +1,75 @@
+.sticky {
+    text-align: center; 
+    color: white;
+}
+body {
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+/*popup form - hidden by default*/
+.form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+/*styles for the form container*/
+.form-container {
+    max-width: 500px;
+    padding: 10px;
+    background-color: white;
+}
+
+/*input fields are full-width*/
+.form-container input[type=text],
+.form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus,
+.form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/*style for submit/login button*/
+.form-container .btn {
+    background-color: #88ccb3;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+/*cancel button*/
+.form-container .cancel {
+    background-color: rgb(212, 125, 207);
+}
+
+/*hover effects for buttons*/
+.form-container .btn:hover,
+.open-button:hover {
+    opacity: 1;
+}

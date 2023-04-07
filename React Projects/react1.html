@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<script src="js/react.js"></script>
+<script src="js/react-dom.js"></script>
+</head>
+
+<body>
+    <div id="My_React_Code"></div>  <!--creating a timer that counts upward using React JS Library code-->
+    <script>
+        var Counter = React.createClass({ //(react specific) React.createClass creates component classes
+            render: function (){
+                var time_Passed = Math.round(this.props.time_Passed / 100);
+                var seconds_Passed = time_Passed / 10 + (time_Passed % 10 ? '' : '.0'); //(vanilla JS) ? is a conditional operator checking whether or not a condition is true, the : is shorthand for “else”
+                var text = 'My React code started running' + //(vanilla JS) % finds the remainder
+                    seconds_Passed + ' seconds ago!';
+                return React.DOM.p(null, text);
+                    }
+        });
+
+        var counter_Factory = React.createFactory(Counter); //(react specific) React.createFactory - function to create a factory 
+
+        var start_Counting = new Date().getTime();
+        setInterval (function() { //(vanilla JS) setInterval() is a method that evaluates an expression at specific intervals (milliseconds)
+            ReactDOM.render ( //(react specific) ReactDOM.render() renders a react component(s)
+                counter_Factory({time_Passed: new Date().getTime() - start_Counting}),
+                document.getElementById('My_React_Code')
+            );
+        }, 50);
+    </script>
+</body>
+
+</html>

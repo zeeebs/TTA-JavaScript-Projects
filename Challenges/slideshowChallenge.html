@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slideshow Challenge</title>
+    <h1>Slideshow Challenge</h1>
+    <link rel="stylesheet" type="text/css" href="css/slideshow.css" />
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/JavaScript"></script>
+</head>
+
+<body>
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+            setInterval(function () {
+                $('#slideshow > div:first')
+                    .fadeOut(1000)
+                    .next()
+                    .fadeIn(1000)
+                    .end()
+                    .appendTo('#slideshow');
+            }, 3000);
+    </script>
+    
+    <div id="slideshow">
+        <div class="image">
+            <img src="img/Vlad1.png">
+        </div>
+        <div class="image">
+            <img src="img/Vlad2.png">
+        </div>
+        <div class="image">
+            <img src="img/Vlad3.png">
+        </div>
+    </div>
+</body>
