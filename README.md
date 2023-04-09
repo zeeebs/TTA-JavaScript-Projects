@@ -21,6 +21,6 @@ This project is the classic Tic-Tac-Toe game, complete with sound effects!
 
 This project is a basic, web-based, 4-function calculator where the user can add, subtract, multiply, and divide.
 
-<h4>>Updated Portfolio Website</h4>
+<h4>Updated Portfolio Website</h4>
 
 Here, my portfolio website was updated with more dynamic CSS formatting and JavaScript functions, allowing for better UX and a more sophisticated layout.
