@@ -1,7 +1,7 @@
 # JavaScript-Projects
 This repository displays samples of projects I made using JavaScript, and various Tech Academy assignments.
 
-<h3>Projects</h3>
+<h3>Notable Projects</h3>
   <ul>
     <li><a href="https://github.com/zeeebs/JavaScript-Projects/tree/main/Pizza%20Menu" target="_blank">Pizza Menu</a></li>
     <p>This project is a menu for ordering Pizza with various toppings, sauces, and crusts. It uses the input information from the user and calculates the order price.
