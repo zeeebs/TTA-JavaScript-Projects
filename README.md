@@ -1,5 +1,5 @@
 # JavaScript-Projects
-This repository displays samples of projects I made using JavaScript, and various Tech Academy assignments.
+This repository displays samples of projects and Tech Academy assignments that utilize JavaScript.
 
 <h3>Notable Projects</h3>
   <ul>
